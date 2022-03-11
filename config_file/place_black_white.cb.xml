@@ -1,0 +1,10 @@
+<!--#start 500 -->
+<config>
+	<request>
+		<table name='BEGIN'>
+			<chain action='continue'>
+			<mark_geo   file='/vhs/kangle/bin/../etc/cdn.line.gz' name='_geo' url='https://download.cdnbest.com/dnsdun/cdn.line.gz' flush_time='86400'></mark_geo>
+			</chain>
+		</table>
+	</request>
+</config>

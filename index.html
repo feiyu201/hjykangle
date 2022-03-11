@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Kangle一键脚本</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="kangle,easypanel,kangle商业版,kangle破解版,kangle一键脚本,kangle.hjyvps.com" />
+<meta name="description" content="本脚本是一键安装Kangle+Easypanel+Mysql的集合脚本。脚本本身集成：PHP5.3-7.3、MYSQL5.6。使用方便，功能强大。" />
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css">
+<style>
+	h4 span {
+    font-size: 0.9em;
+    margin-left: 5px;
+    color: #999;
+    font-weight: 400;
+	}
+	.site-footer-credits a {
+	color: #819198;
+	}
+	section div{
+	margin-bottom: 30px;
+	}
+	.highlighter-rouge{
+	margin-bottom: 20px;
+	}
+</style>
+<script>
+
+window.onload = function(){
+function getBaseUrl() {
+    var ishttps = 'https:' == document.location.protocol ? true : false;
+    var url = window.location.host;
+    if (ishttps) {
+                url = 'https://' + url;
+    } else {
+          url = 'http://' + url;
+    }
+    return url;
+}
+var ym=getBaseUrl();
+
+document.getElementById("az").innerHTML="yum -y install wget;wget "+ym+"/start;sh start";
+}
+
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+</head>
+<body>
+<section class="page-header">
+<h1 class="project-name">Kangle一键脚本</h1>
+<h2 class="project-tagline">本脚本是一键安装Kangle+Easypanel+Mysql的集合脚本，已率先支持CentOS8操作系统</h2>
+<a href="https://bk.hjyvps.com" target="_blank" class="btn">个人博客</a>
+<a href="https://www.hjyvps.com" target="_blank" class="btn">香港服务器</a>
+</section>
+<section class="main-content">
+<div>
+<h1><a href="#header-info"></a>脚本简介</h1>
+<div>
+<p>欢聚云Kangle一键脚本，是一款可以一键安装Kangle+Easypanel+Mysql集合的Linux脚本。
+脚本本身集成：PHP5.3～PHP8.1、MYSQL5.6，支持极速安装和编译安装2种模式，支持CDN专属安装模式。同时也对Easypanel面板进行了大量优化。<br />
+</p>
+</div>
+</div>
+<div>
+<h2><a href="#header-point"></a>脚本特点</h2>
+<div>
+<blockquote>
+<p>有国内和国外2个文件下载节点，提升安装速度<br />
+自带Kangle商业版最新版本免费使用<br />
+支持EP前台自由切换PHP5.3-8.1<br />
+安装前可选MySQL5.6、5.7、8.0版本<br />
+预先设置各PHP版本PHP.ini安全问题<br />
+安装前可自定义数据库密码，避免安装完成后再设置的麻烦<br />
+支持自定义403.404.503.504等错误页面<br />
+脚本中可切换其它几套EP用户后台模板<br />
+脚本中集成Linux工具箱，可一键更换Yum源、更换DNS、设置Swap、同步时间、清理垃圾等<br />
+修改kangle二进制文件以提升错误页加载速度</p>
+</blockquote>
+</div>
+<div id="hideCity">
+<h2><a href="#header-point"></a>EP基于原版的优化内容</h2>
+<div>
+<blockquote>
+<p>
+0.EP源码全解密并升级smarty框架<br />
+1.SSL证书可同步到cdn节点<br />
+2.SSL配置页面新增"HTTP跳转到HTTPS"选项<br />
+3.SSL配置页面新增"开启HTTP2"选项<br />
+4.CDN主机可以给单个域名设置SSL证书<br />
+5.增加独立的PHP版本切换页面<br />
+6.EP管理员后台增加选项：默认PHP版本、允许域名泛绑定<br />
+7.修复带有空格的文件名无法解压和重命名的问题<br />
+9.CDN绑定域名可以自定义回源协议，增加tcp四层转发<br />
+10.优化防CC设置页面，支持设置IP白名单<br />
+11.清除缓存页面支持批量清除<br />
+12.支持设置url黑名单<br />
+13.绑定域名页面新增编辑按钮<br />
+* EP升级方法：脚本主菜单选择单独安装/更新组件，然后选择更新Easypanel</p>
+</blockquote>
+</div>
+</div>
+<div>
+<h2><a href="#header-attention"></a>注意事项</h2>
+<div>
+<p>本脚本支持CentOS 6.x/CentOS 7.x/CentOS 8.x系统（其中CentOS6不支持安装PHP7.4和PHP8.0）
+</p>
+</div>
+</div>
+<div>
+<h2><a href="#header-install"></a>安装方式</h2>
+<div>
+<h4><span>请复制以下指令到ssh连接软件粘贴执行</span></h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><strong><code id="az" name="az"></code></strong>
+</pre></div></div>
+<span><a href="https://bk.hjyvps.com/57.html" target="_blank">关于CentOS6安装异常的解决方法</a></span>
+</div>
+</div>
+</div>
+<footer class="site-footer">
+<span class="site-footer-owner">All rights reserved <a href="#">欢聚云</a>.</span>
+</footer>
+</section>
+<script src="https://pv.sohu.com/cityjson?ie=utf-8" type="text/javascript"></script>
+</body>
+</html>

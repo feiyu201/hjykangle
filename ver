@@ -1,0 +1,5 @@
+#!/bin/bash
+Ver="4.3.b-Fast"
+Day="2016-11-02"
+touch /etc/shl.ver
+echo -e "Ver=""$Ver""\nDay=""$Day""" >> /etc/shl.ver
