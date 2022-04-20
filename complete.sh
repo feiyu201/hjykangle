@@ -3,12 +3,6 @@ files="/root/s-hell"
 source $files/iver
 PREFIX="/vhs/kangle/ext/php"
 source $files/config
-function xg_kangle(){
-echo "正在修改kangle中..................................
-    ........................................................................................"
-    wget $DOWNLOAD_URL/xgwj/xgzsxs -O /vhs/kangle/nodewww/webftp/vhost/control/index.ctl.php
-}
-xg_kangle
 mysql_root_password=$1
 if [ "$mysql_root_password" = "" ]; then
 	mysql_root_password="未设置"
