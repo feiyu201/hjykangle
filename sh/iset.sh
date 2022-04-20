@@ -89,5 +89,5 @@ input_enter=""
 read -p "(任意键返回主菜单)" input_enter
 if [ "$input_enter"!="" ]; 
 then
-kanglesh
+kangle
 fi
