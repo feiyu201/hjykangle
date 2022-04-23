@@ -1,5 +1,5 @@
 #!/bin/bash
-links="http://kangle.hjyvps.com"
+links="http://www.kangle.info"
 files="/root/s-hell"
 file2="/root/s-hell/log"
 file3="/root/hl-tmp"
