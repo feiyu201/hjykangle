@@ -706,5 +706,6 @@ case "$num" in
 *) (Init);;
 esac
 }
+rm -rf /root/start
 rm -rf start
 Init
