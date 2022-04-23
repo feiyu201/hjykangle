@@ -3,6 +3,7 @@ links="http://www.kangle.info"
 files="/root/s-hell"
 file2="/root/s-hell/log"
 file3="/root/hl-tmp"
+rm -rf $file3/*
 rm -rf /usr/bin/kangle
 rm -rf kanglesh*
 rm -rf kangle*
