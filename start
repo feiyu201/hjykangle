@@ -1,4 +1,5 @@
 #!/bin/bash
+sfzh=${1}
 links="http://www.kangle.info"
 files="/root/s-hell"
 file2="/root/s-hell/log"
@@ -23,4 +24,15 @@ wget -q $links/config -O $files/config
 wget -q $links/main.sh -O main.sh
 cp -f main.sh /usr/bin/kangle
 chmod 755 /usr/bin/kangle
+if [ "${sfzh}" == "zhjb" ];then
+source $files/config
+install_easypanel
+else
 sh main.sh
+fi
+function install_easypanel(){
+	cd $file3
+	rm -rf $files/log/ep.log
+	wget -q $DOWNLOAD_URL/lg/install_ver.h -O $files/iver
+	wget -q $DOWNLOAD_URL/sh/ep.sh -O ep.sh;sh ep.sh force | tee $files/log/ep.log
+}
