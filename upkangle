@@ -1,0 +1,33 @@
+#!/bin/bash
+links="http://kangle.hjyvps.com"
+files="/root/s-hell"
+file2="/root/s-hell/log"
+file3="/root/hl-tmp"
+tmpfile="/root/hl-tmp"
+rm -rf /usr/bin/kangle
+rm -rf kanglesh*
+rm -rf kangle*
+if [ ! -d "$files" -a "$file2" -a "$file3" ];
+then
+mkdir $files;
+chmod 755 $files;
+mkdir $file2;
+chmod 755 $file2;
+mkdir $file3;
+chmod 755 $file3;
+fi
+cd $file3
+rm -rf $files/config
+wget -q $links/config -O $files/config
+wget -q $links/main.sh -O main.sh
+cp -f main.sh /usr/bin/kangle
+chmod 755 /usr/bin/kangle
+
+source $files/config
+function install_easypanel(){
+	cd $tmpfile
+	rm -rf $files/log/ep.log
+	wget -q $DOWNLOAD_URL/lg/install_ver.h -O $files/iver
+	wget -q $DOWNLOAD_URL/sh/ep.sh -O ep.sh;sh ep.sh force | tee $files/log/ep.log
+}
+install_easypanel
